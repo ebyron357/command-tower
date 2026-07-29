@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.customer-health",
+  "invocation": "/customer-health",
+  "positive_triggers": [
+    "/customer-health Acme"
+  ],
+  "negative_triggers": [
+    "Ignore churn signals"
+  ],
+  "expected_routing": "customer-health",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.trend-analysis",
+  "positive_triggers": [
+    "Trends in agentic tooling"
+  ],
+  "negative_triggers": [
+    "Fix CSS bug"
+  ],
+  "expected_routing": "trend-analysis",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

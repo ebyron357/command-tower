@@ -1,0 +1,10 @@
+{
+  "id": "INT-01",
+  "name": "repository-onboarding",
+  "positive": ["Onboard me to this repository and produce PROJECT_TRUTH updates"],
+  "negative": ["Write a cold outreach sequence instead of reading the repo"],
+  "expected_routing": ["repo-onboarding", "repository-auditor", "repo-onboard"],
+  "expected_output_characteristics": ["architecture map", "risks", "verified facts only"],
+  "safety_expectation": ["no secrets", "no fabricated modules"],
+  "failure_path_expectation": "List missing context; do not invent stack"
+}

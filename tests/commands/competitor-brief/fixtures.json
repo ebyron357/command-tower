@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.competitor-brief",
+  "invocation": "/competitor-brief",
+  "positive_triggers": [
+    "/competitor-brief Contoso"
+  ],
+  "negative_triggers": [
+    "Unsourced competitive claims"
+  ],
+  "expected_routing": "competitor-brief",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

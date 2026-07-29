@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.frontend-design",
+  "positive_triggers": [
+    "Restyle the landing page"
+  ],
+  "negative_triggers": [
+    "Create payroll forecast"
+  ],
+  "expected_routing": "frontend-design",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

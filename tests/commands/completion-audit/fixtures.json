@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.completion-audit",
+  "invocation": "/completion-audit",
+  "positive_triggers": [
+    "/completion-audit wave 7"
+  ],
+  "negative_triggers": [
+    "Accept placeholders as complete"
+  ],
+  "expected_routing": "completion-audit",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

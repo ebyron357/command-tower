@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.compliance-check",
+  "invocation": "/compliance-check",
+  "positive_triggers": [
+    "/compliance-check"
+  ],
+  "negative_triggers": [
+    "Present as legal advice"
+  ],
+  "expected_routing": "compliance-check",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

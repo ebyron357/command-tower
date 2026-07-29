@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.product-analytics-planning",
+  "positive_triggers": [
+    "Define events for onboarding"
+  ],
+  "negative_triggers": [
+    "Negotiate vendor contract"
+  ],
+  "expected_routing": "product-analytics-planning",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}
