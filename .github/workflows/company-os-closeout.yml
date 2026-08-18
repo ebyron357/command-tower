@@ -53,4 +53,4 @@ jobs:
             exit 1
           fi
 
-      # Interactive Claude Code discovery/trigger behavior is intentionally a separate runtime acceptance gate.
+      # Repository validation stops here; interactive Claude runtime discovery is a separate acceptance gate.
