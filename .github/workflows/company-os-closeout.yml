@@ -1,0 +1,56 @@
+name: Company OS closeout validation
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run canonical structural validator
+        run: python scripts/validate/validate_company_os.py
+
+      - name: Require canonical governance files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s CLAUDE.md
+          test -s COMPANY_OS.md
+          test -s PROJECT_TRUTH.md
+          test -s registries/SOURCE_REGISTRY.md
+
+      - name: Secret-pattern scan
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git grep -nEI '(ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-proj-[A-Za-z0-9_-]{16,}|AKIA[0-9A-Z]{16}|BEGIN (RSA|OPENSSH|EC) PRIVATE KEY)' -- .; then
+            echo 'Potential committed credential found.' >&2
+            exit 1
+          fi
+
+      - name: Verify deferred integrations remain non-secret
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q 'Context7' registries/SOURCE_REGISTRY.md || true
+          if git grep -nEI '(api[_-]?key|token|secret)["'"']?\s*[:=]\s*["'"'][A-Za-z0-9_-]{16,}["'"']' -- ':!*.md' ':!*.json.example'; then
+            echo 'Potential embedded integration secret found.' >&2
+            exit 1
+          fi
+
+      # Interactive Claude Code discovery/trigger behavior is intentionally a separate runtime acceptance gate.
