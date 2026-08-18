@@ -1,0 +1,25 @@
+{
+  "capability_id": "agent.product-manager",
+  "positive_triggers": [
+    "Turn this idea into a PRD"
+  ],
+  "negative_triggers": [
+    "Patch production DB"
+  ],
+  "expected_routing": "product-manager",
+  "allowed_tools": [
+    "Read",
+    "Write",
+    "Grep",
+    "Glob"
+  ],
+  "prohibited_actions": [
+    "Ship code without engineering review",
+    "Promise legal advice"
+  ],
+  "safety_expectation": [
+    "least-privilege",
+    "no-fabricated-results"
+  ],
+  "failure_path_expectation": "Blocked/partial report with gaps"
+}

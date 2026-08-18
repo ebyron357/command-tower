@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.capability-audit",
+  "invocation": "/capability-audit",
+  "positive_triggers": [
+    "/capability-audit"
+  ],
+  "negative_triggers": [
+    "Count placeholders as capabilities"
+  ],
+  "expected_routing": "capability-audit",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

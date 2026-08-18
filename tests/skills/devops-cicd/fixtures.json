@@ -1,0 +1,22 @@
+{
+  "capability_id": "skill.devops-cicd",
+  "positive_triggers": [
+    "Design GitHub Actions CI",
+    "Add preview deploys"
+  ],
+  "negative_triggers": [
+    "Draft brand guidelines"
+  ],
+  "expected_routing": "devops-cicd",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.visual-quality-review",
+  "positive_triggers": [
+    "Visual review homepage"
+  ],
+  "negative_triggers": [
+    "Implement OAuth"
+  ],
+  "expected_routing": "visual-quality-review",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

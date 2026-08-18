@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.brand-application",
+  "positive_triggers": [
+    "Apply brand to docs site"
+  ],
+  "negative_triggers": [
+    "Debug race condition"
+  ],
+  "expected_routing": "brand-application",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}
