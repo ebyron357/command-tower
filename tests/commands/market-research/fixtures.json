@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.market-research",
+  "invocation": "/market-research",
+  "positive_triggers": [
+    "/market-research"
+  ],
+  "negative_triggers": [
+    "Cite unsourced claims as facts"
+  ],
+  "expected_routing": "market-research",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

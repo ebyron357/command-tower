@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.architecture-review",
+  "invocation": "/architecture-review",
+  "positive_triggers": [
+    "/architecture-review"
+  ],
+  "negative_triggers": [
+    "Skip verification for /architecture-review"
+  ],
+  "expected_routing": "architecture-review",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

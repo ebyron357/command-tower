@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.dependency-review",
+  "invocation": "/dependency-review",
+  "positive_triggers": [
+    "/dependency-review"
+  ],
+  "negative_triggers": [
+    "Skip verification for /dependency-review"
+  ],
+  "expected_routing": "dependency-review",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

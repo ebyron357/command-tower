@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(**)",
+      "Edit(**)",
+      "Glob(**)",
+      "Grep(**)"
+    ],
+    "deny": []
+  },
+  "hooks": {},
+  "env": {},
+  "$schema_note": "Project Claude Code settings for Command Tower Company OS. No destructive hooks enabled. Do not add secrets here."
+}

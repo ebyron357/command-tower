@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.analytics-report-generation",
+  "positive_triggers": [
+    "Weekly growth report"
+  ],
+  "negative_triggers": [
+    "Negotiate lease"
+  ],
+  "expected_routing": "analytics-report-generation",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.project-truth",
+  "invocation": "/project-truth",
+  "positive_triggers": [
+    "/project-truth"
+  ],
+  "negative_triggers": [
+    "Guess unverified facts"
+  ],
+  "expected_routing": "project-truth",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

@@ -1,0 +1,37 @@
+{
+  "total": 192,
+  "by_type": {
+    "skill": 117,
+    "subagent": 19,
+    "command": 28,
+    "governing": 8,
+    "validation": 4,
+    "plugin": 3,
+    "mcp": 2,
+    "hook": 2,
+    "external": 6,
+    "reference": 3
+  },
+  "by_department": {
+    "executive": 24,
+    "engineering": 33,
+    "product": 11,
+    "design": 13,
+    "marketing": 15,
+    "sales": 10,
+    "customer-success": 6,
+    "research": 13,
+    "data-analytics": 9,
+    "finance": 10,
+    "legal-compliance": 8,
+    "operations": 10,
+    "human-resources": 5,
+    "training": 2,
+    "quality-security": 23
+  },
+  "recovered": 24,
+  "newly_designed": 168,
+  "implemented": 181,
+  "deferred": 9,
+  "approved": 183
+}

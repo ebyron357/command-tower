@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.dashboard-planning",
+  "positive_triggers": [
+    "Plan exec dashboard"
+  ],
+  "negative_triggers": [
+    "Write Rust FFI"
+  ],
+  "expected_routing": "dashboard-planning",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

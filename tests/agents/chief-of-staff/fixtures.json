@@ -1,0 +1,27 @@
+{
+  "capability_id": "agent.chief-of-staff",
+  "positive_triggers": [
+    "Run company status",
+    "Route this initiative"
+  ],
+  "negative_triggers": [
+    "Write raw SQL migrations"
+  ],
+  "expected_routing": "chief-of-staff",
+  "allowed_tools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Write"
+  ],
+  "prohibited_actions": [
+    "Direct production deploys",
+    "Commit secrets",
+    "Bypass security policy"
+  ],
+  "safety_expectation": [
+    "least-privilege",
+    "no-fabricated-results"
+  ],
+  "failure_path_expectation": "Blocked/partial report with gaps"
+}

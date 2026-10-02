@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.company-plan",
+  "invocation": "/company-plan",
+  "positive_triggers": [
+    "/company-plan for Q3 launch"
+  ],
+  "negative_triggers": [
+    "Plan without reading ROADMAP"
+  ],
+  "expected_routing": "company-plan",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

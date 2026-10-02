@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.contract-review-support",
+  "positive_triggers": [
+    "Review NDA checklist"
+  ],
+  "negative_triggers": [
+    "Write CSS animation"
+  ],
+  "expected_routing": "contract-review-support",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Not legal advice",
+    "Escalate to qualified counsel for decisions",
+    "Do not fabricate regulatory citations"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.employee-onboarding",
+  "positive_triggers": [
+    "30-60-90 onboarding plan"
+  ],
+  "negative_triggers": [
+    "Write regex"
+  ],
+  "expected_routing": "employee-onboarding",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.creative-brief",
+  "positive_triggers": [
+    "Brief for launch video"
+  ],
+  "negative_triggers": [
+    "Tune JVM heap"
+  ],
+  "expected_routing": "creative-brief",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.investment-evaluation",
+  "positive_triggers": [
+    "Evaluate infra investment"
+  ],
+  "negative_triggers": [
+    "Write tweet thread"
+  ],
+  "expected_routing": "investment-evaluation",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Not a substitute for a licensed financial professional",
+    "Do not invent financial figures",
+    "Label assumptions explicitly"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

@@ -1,0 +1,21 @@
+{
+  "capability_id": "skill.unit-economics",
+  "positive_triggers": [
+    "Analyze CAC/LTV"
+  ],
+  "negative_triggers": [
+    "Design empty state"
+  ],
+  "expected_routing": "unit-economics",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Not a substitute for a licensed financial professional",
+    "Do not invent financial figures",
+    "Label assumptions explicitly"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

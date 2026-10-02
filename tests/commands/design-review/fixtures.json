@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.design-review",
+  "invocation": "/design-review",
+  "positive_triggers": [
+    "/design-review"
+  ],
+  "negative_triggers": [
+    "Skip a11y checks"
+  ],
+  "expected_routing": "design-review",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}

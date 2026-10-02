@@ -1,0 +1,24 @@
+{
+  "capability_id": "skill.strategic-planning",
+  "positive_triggers": [
+    "Create a 90-day strategy",
+    "Draft OKRs for engineering",
+    "Prioritize company initiatives"
+  ],
+  "negative_triggers": [
+    "Implement a React component",
+    "Fix a failing unit test"
+  ],
+  "expected_routing": "strategic-planning",
+  "expected_output_characteristics": [
+    "structured",
+    "evidence-backed",
+    "safety-aware"
+  ],
+  "safety_expectation": [
+    "Do not invent evidence",
+    "Do not expose secrets",
+    "Do not claim credentials work without testing"
+  ],
+  "failure_path_expectation": "Return partial/blocked report without fabricating success"
+}

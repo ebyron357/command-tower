@@ -1,0 +1,17 @@
+{
+  "capability_id": "cmd.research",
+  "invocation": "/research",
+  "positive_triggers": [
+    "/research agent memory systems"
+  ],
+  "negative_triggers": [
+    "Skip citations"
+  ],
+  "expected_routing": "research",
+  "missing_input_behavior": "Ask or state defaults from governance docs",
+  "safety_expectation": [
+    "no-secrets",
+    "no-fabricated-success"
+  ],
+  "failure_path_expectation": "Document blockers; do not claim success"
+}
